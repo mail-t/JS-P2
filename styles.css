@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 450px;
+  height: 250px;
+  background-color: rgb(29, 31, 46);
+  border-radius: 50px;
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  gap: 20px;
+}
+.pln {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.heading {
+  color: white;
+  font-size: 35px;
+  font-family: Arial;
+  margin-bottom: 25px;
+}
+.inputPlace {
+  width: 140px;
+  border-radius: 16px;
+  border: 1px solid rgb(29, 31, 46);
+  color: rgb(29, 31, 46);
+}
+
+.selectPlace {
+  border-radius: 16px;
+  border: 1px solid rgb(29, 31, 46);
+  background-color: aquamarine;
+  color: rgb(29, 31, 46);
+  font-family: Arial;
+}
+
+.btn {
+  border-radius: 16px;
+  border: 1px solid rgb(29, 31, 46);
+  color: rgb(29, 31, 46);
+  font-family: Arial;
+  background-color: aqua;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.outcome {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.outcome-score {
+  color: #ffd000;
+  font-family: Arial;
+  font-size: 18px;
+}
+.error-image {
+  color: rgb(245, 41, 41);
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 10px;
+}
+.pln-icon {
+  color: #ffd000;
+}
+
+.eur-icon {
+  color: #2ba4eb;
+}
+.usd-icon {
+  color: #25dd5c;
+}
+.chf-icon {
+  color: #b682e0;
+}
+.arrow-icon {
+  color: white;
+}

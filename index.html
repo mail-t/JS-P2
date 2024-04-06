@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Przelicznik walut</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="icones">
+        <div class="pln">
+          <i class="pln-icon fa-solid fa-p fa-lg"></i>
+          <i class="pln-icon fa-solid fa-l fa-lg"></i>
+          <i class="pln-icon fa-solid fa-n fa-lg"></i>
+        </div>
+        <div>
+          <i class="arrow-icon fa-solid fa-arrows-rotate fa-lg"></i>
+        </div>
+        <div>
+          <i class="eur-icon fa-solid fa-euro-sign fa-xl"></i>
+          <i class="usd-icon fa-solid fa-dollar-sign fa-xl"></i>
+          <i class="chf-icon fa-solid fa-franc-sign fa-xl"></i>
+        </div>
+      </div>
+      <header class="container">
+        <h1 class="heading">PRZELICZNIK WALUT</h1>
+      </header>
+      <main class="container">
+        <form id="currency-converter">
+          <input
+            name="amount"
+            class="inputPlace"
+            type="number"
+            placeholder="wpisz wartość PLN"
+            required
+            min="0.01"
+            step="0.01" />
+          <select class="selectPlace" name="currency">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="CHF">CHF</option>
+          </select>
+          <button class="btn" type="submit">Przelicz</button>
+          <span class="outcome">to</span>
+          <span class="outcome-score" id="result"></span>
+        </form>
+      </main>
+      <div class="container error-image" id="error-label"></div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d1f54d8dbf.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
